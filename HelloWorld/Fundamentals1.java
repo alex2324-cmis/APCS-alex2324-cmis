@@ -22,6 +22,9 @@ public class Fundamentals1
         String m = "Int data type is a 32-bit signed two's complement integer.";
         String l = "Int can represent the amount of calories 15 people consumed in their lifetime";
         String n = "Long data type is a 64-bit signed two's complement integer";
+        String o = "Long data can represent a light year in meters";
+        String p = "Float data type is a single-precision 32-bit IEEE 754 floating point";
+      
 
         
 
