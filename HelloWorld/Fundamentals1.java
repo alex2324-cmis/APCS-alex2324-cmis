@@ -24,6 +24,7 @@ public class Fundamentals1
         String n = "Long data type is a 64-bit signed two's complement integer";
         String o = "Long data can represent a light year in meters";
         String p = "Float data type is a single-precision 32-bit IEEE 754 floating point";
+        String q = "Float can be represented as 1 million light year in cenimeters";
       
 
         
