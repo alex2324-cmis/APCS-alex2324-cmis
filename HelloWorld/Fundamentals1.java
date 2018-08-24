@@ -3,6 +3,14 @@ public class Fundamentals1
 {
     public static void main(String args[]){
         dataTypes();
+        add(10, 60);
+        sub(50, 20);
+        mul(2,9);
+        div(16,8);
+        add(100.43,20.54);
+        sub(324.23,233.23);
+        mul(23.2,22.3);
+        div(8.5,4.5);
     }
     
     public static void dataTypes(){
@@ -30,13 +38,54 @@ public class Fundamentals1
         String v = "Boolean can be represented as am I a boy?, Is it 6 pm?, and Is this color red?";
         String w = "Char data type is a single 16-bit Unicode character";
         String x = "Char can represent the most expensive keyboard in Cambodian riel, amount of Bornean orangutan left in the world, and the amount of mosquitoes people catch in Thailand";
-        
-
-      
-
-        
-
-
+        System.out.println("Example data types :");
+        System.out.println("byte : 0b00010100");
+        System.out.println("short : 10000");
+        System.out.println("int : 100000");
+        System.out.println("long : 100000L");
+        System.out.println("float : 234.5f");
+        System.out.println("double : 123.4");
+        System.out.println("boolean : true");
+        System.out.println("char : 'A'");
     }
-
-}
+    
+    public static int add(int a, int b){
+        int add = a + b;
+        return add;
+    }
+    
+    public static int sub(int a,int b){
+        int sub = a - b;
+        return sub;
+    }
+    
+    public static int mul(int a, int b){
+        int mul = a * b;
+        return mul;
+    }
+    
+    public static int div(int a, int b){
+        int div = a / b;
+        return div;
+    }
+    
+    public static double add(double a, double b){
+        double add = a + b;
+        return add;
+    }
+    
+    public static double sub(double a, double b){
+        double sub = a - b;
+        return sub;
+    }
+    
+    public static double mul(double a, double b){
+        double mul = a * b;
+        return mul;
+    }
+    
+    public static double div(double a, double b){
+        double div = a / b;
+        return div;
+    }
+}    
