@@ -11,6 +11,10 @@ public class Fundamentals1
         sub(324.23,233.23);
         mul(23.2,22.3);
         div(8.5,4.5);
+        System.out.println(add(10,60));
+        System.out.println(mul(2,9));
+        System.out.println(sub(50,20));
+        System.out.println(div(8.5,4.3));
     }
     
     public static void dataTypes(){
