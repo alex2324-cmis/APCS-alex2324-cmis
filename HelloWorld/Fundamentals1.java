@@ -11,10 +11,8 @@ public class Fundamentals1
         sub(324.23,233.23);
         mul(23.2,22.3);
         div(8.5,4.5);
-        System.out.println(add(10,60));
-        System.out.println(mul(2,9));
-        System.out.println(sub(50,20));
-        System.out.println(div(8.5,4.3));
+        compare (10,10);
+        evenOddZero(2);
     }
     
     public static void dataTypes(){
@@ -91,5 +89,38 @@ public class Fundamentals1
     public static double div(double a, double b){
         double div = a / b;
         return div;
+    }
+    
+    public static void compare(int a, int b){
+        if (a<b) {
+         System.out.format("The value of a is %d and it is less than b whose value is %d%n", a,b);
+        }
+        else if (a>b) {
+            System.out.format("The value of b is %d and it is less than a whose value is %d%n", a,b);
+        }
+            
+        else{
+            System.out.format("The value of a which is %d and b which is %d are equal %n", a,b);
+        }
+    }
+    
+    public static void evenOddZero(int a){
+        if(a % 2 == 0) {
+            System.out.println(1);
+        }
+        
+        if(a % 2 != 0){
+            System.out.println(-1);
+        }
+        
+        if (a == 0){
+            System.out.println(0);
+        }
+    }
+    
+    public static void sqareTable(int a){
+        while(a >= 1){
+            
+        }
     }
 }    
