@@ -128,11 +128,10 @@ public class Fundamentals1
         }
     }
     
-    public static void triangle(int a){  
-        int b = a+ a;
-        for(a = a;a >= 1; a--){
-           b = a + a;
-           
-    }
+    public static void triangle(int a){ 
+        for (a = a;a >= 1; a--){
+           int add = a ++;
+           System.out.format("%d + ", a);
+        }
     }
 }   
