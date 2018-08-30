@@ -118,9 +118,21 @@ public class Fundamentals1
         }
     }
     
-    public static void sqareTable(int a){
-        while(a >= 1){
-            
+    public static void sqareTable(){
+        int a = 1;
+        int b = 1;
+        for(a = 1; a<=10; a++){
+            b = a * a;
+            int random = (int )(Math.random() * ((b - a)+1)) + a;
+            System.out.format("%d\t%d\t%d\n", a,b,random);
         }
     }
-}    
+    
+    public static void triangle(int a){  
+        int b = a+ a;
+        for(a = a;a >= 1; a--){
+           b = a + a;
+           
+    }
+    }
+}   
