@@ -128,10 +128,19 @@ public class Fundamentals1
         }
     }
     
-    public static void triangle(int a){ 
+    public static int triangle(int a){ 
+        int b = 0;
         for (a = a;a >= 1; a--){
-           int add = a ++;
-           System.out.format("%d + ", a);
+           b += a;
         }
+        return b;
     }
-}   
+    
+    public static int pyramid(int a ){
+        int b = 0;
+        for (a = a; a>= 1; a--){
+            b += (a*a);
+        }
+        return b;
+    }
+} 
