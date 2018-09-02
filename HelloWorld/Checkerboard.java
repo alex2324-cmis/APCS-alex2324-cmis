@@ -11,6 +11,7 @@ public class Checkerboard {
         String output = "";
         String mid = "";
         String mid2 = "";
+        String mid3 = "";
         for (int a = 0; a <= h+1; a++){
             if (a == 0){
                 for (int c = 0; c < w; c ++){
@@ -24,9 +25,7 @@ public class Checkerboard {
                 }
                 output += "+" + mid2 + "+";
             }
-            else if (a == 0){
-                
-            }
+
             else{
                 for (int b = 0; b < w; b ++){
                     output += ".";
@@ -35,5 +34,26 @@ public class Checkerboard {
             output += "\n";
         }
         return output;  
+    }
+    
+    public static String sideborder(int l, int r){
+        String output = "";
+        String mid = "";
+        String mid2 = "";
+        for (int b = 0; b<= l+1; b++ ){
+            if (b == 0){
+                for(int c = 0; c < r ; c++){
+                    mid += "|";
+                }
+                output += mid;
+            }
+            else if (b == l+1){
+                for (int d = 0; d < 2; d++){
+                    mid2 += "|";
+                }
+                output += mid2;
+            }
+        }
+        return output;
     }
 }
