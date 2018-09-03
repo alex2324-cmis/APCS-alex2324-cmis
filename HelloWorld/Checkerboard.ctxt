@@ -4,6 +4,4 @@ comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=h\ w
 comment2.target=java.lang.String\ checkerboard(int,\ int)
-comment3.params=l\ r
-comment3.target=java.lang.String\ sideborder(int,\ int)
-numComments=4
+numComments=3
