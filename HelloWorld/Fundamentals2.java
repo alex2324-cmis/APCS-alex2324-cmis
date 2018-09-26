@@ -26,9 +26,119 @@ public class Fundamentals2
         }
     }
     //number 2
-    public static void lastItem(double[] array){
+    public static void printArray(double[] array, boolean skip){  
         int x = 0;
         int y = 0;
-        
+        if(skip == true){
+            while(x < array.length){
+                System.out.println(array[x]);
+                x += 2;
+            }
+        }
+        else if(skip == false){
+            while (y < array.length){
+                System.out.println(array[y]);
+                y += 1;
+            }
+        }
     }
+    //number 2
+    public static void printArray(String[] array, boolean skip){  
+        int x = 0;
+        int y = 0;
+        if(skip == true){
+            while(x < array.length){
+                System.out.println(array[x]);
+                x += 2;
+            }
+        }
+        else if(skip == false){
+            while (y < array.length){
+                System.out.println(array[y]);
+                y += 1;
+            }
+        }
+    }
+    //number 2
+    public static void printArray(boolean[] array, boolean skip){  
+        int x = 0;
+        int y = 0;
+        if(skip == true){
+            while(x < array.length){
+                System.out.println(array[x]);
+                x += 2;
+            }
+        }
+        else if(skip == false){
+            while (y < array.length){
+                System.out.println(array[y]);
+                y += 1;
+            }
+        }
+    }
+    //number 2
+    public static void lastItem(int[] array){
+        int answer = array[array.length-1];
+        System.out.println(answer);
+    }
+    //number 3
+    public static void lastItem(double[] array){
+        double answer = array[array.length-1];
+        System.out.println(answer);
+    }
+    //number 3
+    public static void lastItem(String[] array){
+        String answer = array[array.length-1];
+        System.out.println(answer);
+    }
+    //number 3
+    public static void lastItem(Boolean[] array){
+        Boolean answer = array[array.length-1];
+        System.out.println(answer);
+    }
+    //number 3
+    public static void MiddleItem(int[] array){
+        if (array.length % 2 != 0){
+            int solution = array[array.length/2];
+            System.out.println(solution);        
+        }
+        else {
+            int solution = array[(array.length/2) - 1];
+            System.out.println(solution);
+        }
+    }
+    //number 4
+    public static void MiddleItem(double[] array){
+        if (array.length % 2 != 0){
+            double solution = array[array.length/2];
+            System.out.println(solution);        
+        }
+        else {
+            double solution = array[(array.length/2) - 1];
+            System.out.println(solution);
+        }
+    }
+    //number 4
+    public static void MiddleItem(String[] array){
+        if (array.length % 2 != 0){
+            String solution = array[array.length/2];
+            System.out.println(solution);        
+        }
+        else {
+            String solution = array[(array.length/2) - 1];
+            System.out.println(solution);
+        }
+    }
+    //number 4
+    public static void MiddleItem(Boolean[] array){
+        if (array.length % 2 != 0){
+            Boolean solution = array[array.length/2];
+            System.out.println(solution);        
+        }
+        else {
+            Boolean solution = array[(array.length/2) - 1];
+            System.out.println(solution);
+        }
+    }
+    //number 4
 }
