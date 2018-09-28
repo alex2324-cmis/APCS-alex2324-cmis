@@ -141,4 +141,22 @@ public class Fundamentals2
         }
     }
     //number 4
+    public static int[] randomInts(int n, int min, int max){
+        int [] num = new int[n];
+        for(int x = 0; x < n; x++){
+            int d = (int)((Math.random() * (max - min) + min));
+            num [x] = d;
+        }
+        return num;
+    }
+    //number 5
+    public static double[] randomDoubles(int n, double min, double max){
+        double [] num = new double[n];
+        for(int x = 0; x < n; x++){
+            double d = (double)((Math.random() * (max - min) + min));
+            num [x] = d;
+        }
+        return num;
+    }
+    //number 6
 }
