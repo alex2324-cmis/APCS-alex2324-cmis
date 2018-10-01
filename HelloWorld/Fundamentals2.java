@@ -159,4 +159,14 @@ public class Fundamentals2
         return num;
     }
     //number 6
+    public static int[] copy(int[] array){
+        int[] errey  = new int[]{array.length};
+        int x = 0;
+        while (array.length >= x)
+        {
+            errey [x] = array [x];
+            x++;
+        }
+        return array;
+    }
 }
