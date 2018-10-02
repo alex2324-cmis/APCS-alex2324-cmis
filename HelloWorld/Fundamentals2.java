@@ -8,7 +8,7 @@ public class Fundamentals2
         System.out.println(arrayy [2]);
         System.out.println(arrayyy [4]);
     }
-    //number 1
+    //end number 1
     public static void printArray(int[] array, boolean skip){  
         int x = 0;
         int y = 0;
@@ -25,7 +25,7 @@ public class Fundamentals2
             }
         }
     }
-    //number 2
+    //end number 2
     public static void printArray(double[] array, boolean skip){  
         int x = 0;
         int y = 0;
@@ -42,7 +42,7 @@ public class Fundamentals2
             }
         }
     }
-    //number 2
+    //end number 2
     public static void printArray(String[] array, boolean skip){  
         int x = 0;
         int y = 0;
@@ -59,7 +59,7 @@ public class Fundamentals2
             }
         }
     }
-    //number 2
+    //end number 2
     public static void printArray(boolean[] array, boolean skip){  
         int x = 0;
         int y = 0;
@@ -76,27 +76,27 @@ public class Fundamentals2
             }
         }
     }
-    //number 2
+    //end number 2
     public static void lastItem(int[] array){
         int answer = array[array.length-1];
         System.out.println(answer);
     }
-    //number 3
+    //end number 3
     public static void lastItem(double[] array){
         double answer = array[array.length-1];
         System.out.println(answer);
     }
-    //number 3
+    //end number 3
     public static void lastItem(String[] array){
         String answer = array[array.length-1];
         System.out.println(answer);
     }
-    //number 3
+    //end number 3
     public static void lastItem(Boolean[] array){
         Boolean answer = array[array.length-1];
         System.out.println(answer);
     }
-    //number 3
+    //end number 3
     public static void MiddleItem(int[] array){
         if (array.length % 2 != 0){
             int solution = array[array.length/2];
@@ -107,7 +107,7 @@ public class Fundamentals2
             System.out.println(solution);
         }
     }
-    //number 4
+    //end number 4
     public static void MiddleItem(double[] array){
         if (array.length % 2 != 0){
             double solution = array[array.length/2];
@@ -118,7 +118,7 @@ public class Fundamentals2
             System.out.println(solution);
         }
     }
-    //number 4
+    //end number 4
     public static void MiddleItem(String[] array){
         if (array.length % 2 != 0){
             String solution = array[array.length/2];
@@ -129,7 +129,7 @@ public class Fundamentals2
             System.out.println(solution);
         }
     }
-    //number 4
+    //end number 4
     public static void MiddleItem(Boolean[] array){
         if (array.length % 2 != 0){
             Boolean solution = array[array.length/2];
@@ -140,7 +140,7 @@ public class Fundamentals2
             System.out.println(solution);
         }
     }
-    //number 4
+    //end number 4
     public static int[] randomInts(int n, int min, int max){
         int [] num = new int[n];
         for(int x = 0; x < n; x++){
@@ -149,7 +149,7 @@ public class Fundamentals2
         }
         return num;
     }
-    //number 5
+    //end number 5
     public static double[] randomDoubles(int n, double min, double max){
         double [] num = new double[n];
         for(int x = 0; x < n; x++){
@@ -158,14 +158,23 @@ public class Fundamentals2
         }
         return num;
     }
-    //number 6
+    //end number 6
     public static int[] copy(int[] array){
-        int[] errey  = new int[]{array.length};
+        int[] errey  = new int[array.length];
         int x = 0;
-        while (array.length >= x)
+        while (array.length > x)
         {
             errey [x] = array [x];
             x++;
+        }
+        return array;
+    }
+    //end number 7
+    public static int[] pairs(int n){
+        int[] array = new int[n * 2];
+        int y = 0;
+        for (int x = 0; x < n; x++){
+            
         }
         return array;
     }
