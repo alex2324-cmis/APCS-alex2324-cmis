@@ -172,10 +172,33 @@ public class Fundamentals2
     //end number 7
     public static int[] pairs(int n){
         int[] array = new int[n * 2];
-        int y = 0;
-        for (int x = 0; x < n; x++){
-            
+        int y = 1;
+        for (int x = 0; x < array.length; x+=2){
+            array[x] = y * 2;
+            array[x + 1] = y * 2;
+            y++;
         }
         return array;
     }
+    //end number 8
+    public static int[] concat(int[] a, int[] b){
+        int[] array = new int[a.length + b.length];
+        int z = 0;
+        for(int x = 0; x < a.length; x++){
+            array[x] = a[x];
+        }
+        for (int d = a.length; d < array.length; d++){
+            array[d] = b[z];
+            z++;
+        }
+        return array;
+    }
+    //end number 9
+    //public static int[] merge(int[] a, int[] b){
+        //int z = 1;
+        //for (int x = 0; x < z; x+=2){
+            
+            //z++;
+        //}
+    //}
 }
