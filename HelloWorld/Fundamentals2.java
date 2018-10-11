@@ -194,11 +194,19 @@ public class Fundamentals2
         return array;
     }
     //end number 9
-    //public static int[] merge(int[] a, int[] b){
-        //int z = 1;
-        //for (int x = 0; x < z; x+=2){
-            
-            //z++;
-        //}
-    //}
+    public static int[] merge(int[] a, int[] b){
+        int z = a.length + b.length;
+        int v = a.length;
+        int p = b.length;
+        int[] array = new int[z];
+        for (int x = 0; x <= z; x+=2){
+            for (int y = 0; y<= v; y++){
+                array[x] = a[y];
+                for(int m = 0; m <= p; m++){
+                    array[x+1] = b[y];
+                }
+            }
+        }
+        return array;
+    }
 }
