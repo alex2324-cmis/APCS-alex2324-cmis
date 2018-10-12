@@ -198,14 +198,21 @@ public class Fundamentals2
         int z = a.length + b.length;
         int v = a.length;
         int p = b.length;
+        int y = 0;
         int[] array = new int[z];
-        for (int x = 0; x <= z; x+=2){
-            for (int y = 0; y<= v; y++){
-                array[x] = a[y];
-                for(int m = 0; m <= p; m++){
-                    array[x+1] = b[y];
-                }
-            }
+        if (v > p){
+            int big = v;
+            int small = p;
+            int difference = v-p;
+        }else{
+            int big = p;
+            int small = v;
+            int difference = p-v;
+        }
+        for (int x = 0; x < z; x+=2){
+            array[x] += a[y];
+            array[x+1] += b[y];
+            y++;
         }
         return array;
     }
