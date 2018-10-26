@@ -203,11 +203,9 @@ public class Fundamentals2
         if (v > p){
             int big = v;
             int small = p;
-            int difference = v-p;
         }else{
             int big = p;
             int small = v;
-            int difference = p-v;
         }
         for (int x = 0; x < z; x+=2){
             array[x] += a[y];
