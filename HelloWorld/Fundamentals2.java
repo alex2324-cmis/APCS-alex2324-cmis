@@ -209,15 +209,45 @@ public class Fundamentals2
             small = a.length;
             arr = b;
         }
-        
+
         for (int x = 0; x < small; x++){
             array[2*x] = a[x];
             array[2*x+1] = b[x];
         }
         for(int y = small*2; y < array.length; y++){
-           array[y] = arr[small];
-           small++;
+            array[y] = arr[small];
+            small++;
         } 
+        return array;
+    }
+    //end number 10
+    public static int[] reverse(int[] array){
+        for(int i = 0; i < array.length/2; i++)
+        {
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
+        }
+        return array; 
+    }
+    //end number 11
+    public static int[] subArray(int[] array, int start, int stop){
+        int arrayy[] = new int [stop-start];
+        int b = 0;
+        while(b < arrayy.length){
+            for(int a = 0; a < array.length; a++){
+                if (start == array[a]){
+                    arrayy[b] = array[a];
+                    b++;
+                }
+                else if (stop == array[a]){
+                    arrayy[b] = array[a];
+                }
+                else{
+                    
+                }
+            }
+        }
         return array;
     }
 }
