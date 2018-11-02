@@ -234,20 +234,62 @@ public class Fundamentals2
     public static int[] subArray(int[] array, int start, int stop){
         int arrayy[] = new int [stop-start];
         int b = 0;
-        while(b < arrayy.length){
-            for(int a = 0; a < array.length; a++){
-                if (start == array[a]){
-                    arrayy[b] = array[a];
-                    b++;
-                }
-                else if (stop == array[a]){
-                    arrayy[b] = array[a];
-                }
-                else{
-                    
-                }
+        for(int a = start; a < stop; a++){
+            arrayy[b] = array[a];
+            b++;
+        }
+        return arrayy;
+    }
+    //end number 12
+    public static int[] compareArrays(int[] a, int[] b){
+        int g = 0;
+        int h = 0;
+        for (int x = 0; x < a.length; x++){
+            g = a[x];
+        }
+        for (int y = 0; y < b.length; y++){
+            h = b[y];
+        }
+        if (g > h){
+            return a;
+        }
+        else {
+            return b;
+        }
+    }
+    //end number 13
+    public static int[] minimize(int[] array, int threshold){
+        for(int x = 0; x < array.length; x++){
+            if (threshold > array[x]){
+                array[x] = threshold;
             }
         }
         return array;
     }
+    //end number 14
+    public static void maximize(int[] array, int threshold){
+        for(int x = 0; x < array.length; x++){
+            if (threshold < array[x]){
+                array[x] = threshold;
+            }
+        }
+    }
+    //end number 15
+    public static double[] maxMerge(double[] a, double[] b){
+        double g = 0;
+        double h = 0;
+        for (int x = 0; x < a.length; x++){
+            g = a[x];
+        }
+        for (int y = 0; y < b.length; y++){
+            h = b[y];
+        }
+        if (g > h){
+            return a;
+        }
+        else {
+            return b;
+        }
+    }
+    //end number 16
 }
