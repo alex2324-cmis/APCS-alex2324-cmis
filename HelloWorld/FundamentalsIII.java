@@ -49,8 +49,15 @@ public class FundamentalsIII
         }
     }
     public static void snakePrint(int[][] arr){
+        int y = 2;
         for(int x = 0; x < arr.length; x++){
-
+            if(x % 2 == 0){
+                //System.out.print(arr[x][u] + " ");
+            } 
+            else{
+                System.out.print(arr[y] + " ");
+            }
+            y+=2;
         }
     }
 }
