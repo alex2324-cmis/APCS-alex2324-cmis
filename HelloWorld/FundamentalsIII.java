@@ -72,13 +72,36 @@ public class FundamentalsIII
     }
 
     public static String[][] locate(String[][] arr){
+        int randomNum = (int)(Math.random() * (arr.length));
+        int randomNumm = (int)(Math.random() * ((arr.length)));
+        int randomNummm = (int)(Math.random() * ((10 - 1) + 1));
+        String v = "" + randomNummm;
         for(int x = 0; x < arr.length; x++){
             for(int y = 0; y < arr[x].length; y++){
-                //if(arr[x][y] ){
-                    //int randomNum = (int)(Math.random() * ((10 - 1) + 1));
-                //}
+                if(arr[randomNum][randomNumm] != " "){
+                     arr[randomNum][randomNumm] = v;
+                }
             }
         }
         return arr;
+    }
+    public static int[][] replace(int[][] array, int threshold, int newValue){
+        for(int x = 0; x < array.length; x++){
+            for(int y = 0; y < array[x].length; y++){
+                if(array[x][y] > threshold){
+                    array[x][y] = newValue;
+                }
+            }
+        }
+        return array;
+    }
+    public static double[][] shift(double[][] arr, int row){
+        double [][] out = new double [arr.length][arr[0].length];
+        for(int x = 0; x < arr.length; x++){
+            //if(out[x] == row){
+                
+            //}
+        }
+        return out;
     }
 }
