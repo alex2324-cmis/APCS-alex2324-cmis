@@ -79,12 +79,13 @@ public class FundamentalsIII
         for(int x = 0; x < arr.length; x++){
             for(int y = 0; y < arr[x].length; y++){
                 if(arr[randomNum][randomNumm] != " "){
-                     arr[randomNum][randomNumm] = v;
+                    arr[randomNum][randomNumm] = v;
                 }
             }
         }
         return arr;
     }
+
     public static int[][] replace(int[][] array, int threshold, int newValue){
         for(int x = 0; x < array.length; x++){
             for(int y = 0; y < array[x].length; y++){
@@ -95,13 +96,37 @@ public class FundamentalsIII
         }
         return array;
     }
-    public static double[][] shift(double[][] arr, int row){
-        double [][] out = new double [arr.length][arr[0].length];
-        for(int x = 0; x < arr.length; x++){
-            //if(out[x] == row){
-                
-            //}
+
+    public static int[][] shift(int[][] array, int shiftRow){
+        double [][] out = new double [array.length][array[0].length];
+        for(int row = array.length - 1; row >= 0; row--){
+            for(int col = 0; col < array[row].length; col++){
+                if(row == shiftRow){
+                    if(row == array.length - 1){
+                        array[row][col] = (int)(Math.random() * 10);
+                    } 
+                    else if(row == 0){
+                        array[row+2][col] = array[row + 1][col];
+                        array[row + 1][col] = array[row][col];
+                        array[row][col] = (int)(Math.random() * 10);    
+                    }
+
+                    else{
+                        array[row + 1][col] = array[row][col];
+                        array[row][col] = (int)(Math.random() * 10);    
+                    }
+                }
+            }
         }
-        return out;
+        return array;
+    }
+    
+    public static double[][] tilt(double[][] arr){
+        for(int row = 0; row < arr.length; row ++){
+            for(int col = 0; col < arr[0].length; col++){
+                arr[row][col] = arr[col][row];
+            }
+        }
+        return arr;
     }
 }
