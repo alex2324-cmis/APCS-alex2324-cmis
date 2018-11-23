@@ -131,7 +131,7 @@ public class FundamentalsIII
         return output;
     }
 
-    public static int[][] eleven(int[][] array, int width, int height){
+    public static void eleven(int[][] array){
         int x = 0;
         int y = 0;
         int a = 0;
@@ -168,9 +168,5 @@ public class FundamentalsIII
                 p += array[col3][row];
             } 
         }
-        //if (x > y && a && z && d && p){
-            
-        //}
-        return array;
     }
 }
