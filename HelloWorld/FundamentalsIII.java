@@ -134,39 +134,10 @@ public class FundamentalsIII
     public static void eleven(int[][] array){
         int x = 0;
         int y = 0;
-        int a = 0;
-        int z = 0;
-        int d = 0;
-        int p = 0;
-        for(int row = 0; row < array.length; row++){
-            for(int col1 = 0; col1 < array[0].length; col1++){
-                x += array[row][col1];
-            } 
-        }
-        for(int row = 1; row < array.length; row++){
-            for(int col2 = 0; col2 < array[0].length; col2++){
-                y += array[row][col2];
-            } 
-        }
-        for(int row = 2; row < array.length; row++){
-            for(int col3 = 0; col3 < array[0].length; col3++){
-                a += array[row][col3];
-            } 
-        }
-        for(int row = 0; row < array.length; row++){
-            for(int col1 = 0; col1 < array[0].length; col1++){
-                z += array[col1][row];
-            } 
-        }
-        for(int row = 1; row < array.length; row++){
-            for(int col2 = 0; col2 < array[0].length; col2++){
-                d += array[col2][row];
-            } 
-        }
-        for(int row = 2; row < array.length; row++){
-            for(int col3 = 0; col3 < array[0].length; col3++){
-                p += array[col3][row];
-            } 
+        for(int a = 0; a < array.length; a++){
+            for(int b = 0; b < array[a].length;){
+                x += array[b][a];
+            }
         }
     }
 }
